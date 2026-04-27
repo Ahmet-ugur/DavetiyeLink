@@ -83,9 +83,18 @@ function closeIntro(skipAnimation = false) {
   }, 950);
 }
 
-if (inviteIntro && openInviteBtn) {
+if (inviteIntro) {
   document.body.classList.add("intro-lock");
-  openInviteBtn.addEventListener("click", () => closeIntro(false));
+
+  if (openInviteBtn) {
+    openInviteBtn.addEventListener("click", () => closeIntro(false));
+  }
+
+  inviteIntro.addEventListener("click", () => {
+    if (!isIntroClosed) {
+      closeIntro(false);
+    }
+  });
 
   window.addEventListener("keydown", (event) => {
     if (isIntroClosed) {
