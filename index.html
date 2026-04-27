@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ahmet & İrem | Nişan Davetiyesi</title>
+  <meta name="description" content="Ahmet ve İrem'in nişan davetiyesi. Eğlence detayları, konum ve RSVP bilgileri." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="invite-intro" id="inviteIntro" aria-live="polite">
+    <div class="petals" aria-hidden="true">
+      <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+    </div>
+    <div class="intro-glow intro-glow-a" aria-hidden="true"></div>
+    <div class="intro-glow intro-glow-b" aria-hidden="true"></div>
+    <div class="envelope-wrap">
+      <p class="intro-overline">Ahmet & İrem</p>
+      <div class="envelope" aria-hidden="true">
+        <div class="envelope-flap"></div>
+        <div class="envelope-body"></div>
+        <div class="envelope-title-tag">
+          <span>Nişan</span>
+          <strong>Davetiyesi</strong>
+          <em class="title-date">12 • Eylül • 2026</em>
+        </div>
+        <div class="envelope-letter">
+          <span class="letter-ornament" aria-hidden="true">* * *</span>
+        </div>
+        <div class="envelope-seal">A.I</div>
+      </div>
+      <p class="intro-text">Sizin için hazırladığımız davetiyeyi açın</p>
+      <div class="intro-actions">
+        <button class="btn btn-primary" id="openInviteBtn" type="button">Davetiyeyi Aç</button>
+      </div>
+    </div>
+  </div>
+
+  <aside class="welcome-toast" id="welcomeToast" aria-live="polite" aria-hidden="true">
+    <p class="welcome-title">Hoş Geldiniz</p>
+    <p class="welcome-text">Ahmet ve İrem'in bu özel gününde bizimle olduğunuz için teşekkür ederiz.</p>
+    <button class="welcome-close" id="closeWelcomeBtn" type="button" aria-label="Karşılama mesajını kapat">Kapat</button>
+  </aside>
+
+  <div class="paper-grain" aria-hidden="true"></div>
+  <div class="bg-orb orb-a" aria-hidden="true"></div>
+  <div class="bg-orb orb-b" aria-hidden="true"></div>
+
+  <header class="hero reveal">
+    <p class="eyebrow">Bismillah ile</p>
+    <h1>Ahmet <span>&</span> İrem</h1>
+    <p class="hero-text">Nişan mutluluğumuzu ailemiz ve dostlarımızla birlikte kutlamak isteriz.</p>
+    <p class="hero-divider" aria-hidden="true">* * *</p>
+    <div class="hero-meta">
+      <div>
+        <p class="meta-label">Tarih</p>
+        <p class="meta-value">12 Eylül 2026</p>
+      </div>
+      <div>
+        <p class="meta-label">Saat</p>
+        <p class="meta-value">19:00</p>
+      </div>
+      <div>
+        <p class="meta-label">Mekan</p>
+        <p class="meta-value">Lavinya Koru</p>
+      </div>
+    </div>
+    <div class="hero-actions">
+      <a class="btn btn-secondary" href="https://maps.google.com" target="_blank" rel="noopener noreferrer">Mekan Konumu</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="countdown reveal" aria-labelledby="countdown-title">
+      <h2 id="countdown-title">Büyük Güne Kalan Süre</h2>
+      <div class="timer" role="timer" aria-live="polite">
+        <article><p id="days">00</p><span>Gün</span></article>
+        <article><p id="hours">00</p><span>Saat</span></article>
+        <article><p id="minutes">00</p><span>Dakika</span></article>
+        <article><p id="seconds">00</p><span>Saniye</span></article>
+      </div>
+    </section>
+
+    <section class="details reveal" aria-labelledby="program-title">
+      <h2 id="program-title">Nişan Akşamı</h2>
+      <div class="timeline">
+        <article>
+          <h3>Nişan Başlangıcı</h3>
+          <p>Ailelerimizin katılımıyla nişan törenimiz başlar.</p>
+        </article>
+        <article>
+          <h3>Yüzük Takı Merasimi</h3>
+          <p>Yüzükler takılır ve hatıra fotoğrafları çekilir.</p>
+        </article>
+        <article>
+          <h3>Müzik ve Eğlence</h3>
+          <p>Müzik eşliğinde nişan kutlamamız devam eder.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="location" class="location reveal" aria-labelledby="location-title">
+      <h2 id="location-title">Konum Detayları</h2>
+      <div class="location-grid">
+        <article class="location-card">
+          <h3>Mekan Bilgisi</h3>
+          <!-- Yayin oncesi: mekan netlesince bu metin ve mini harita bilgilerini guncelle. -->
+          <p class="location-address">Mekan bilgisi netleştiğinde bu alan güncellenecektir.</p>
+          <div class="mini-map" role="img" aria-label="Mekan için mini harita önizleme alanı">
+            <span class="mini-map-pin" aria-hidden="true"></span>
+            <p class="mini-map-text">Mini harita önizlemesi mekan belli olduğunda aktif olacaktır.</p>
+          </div>
+        </article>
+
+        <article class="location-card calendar-card">
+          <h3>Takvime Ekle</h3>
+          <p class="calendar-text">Nişan gününü tek tıkla takvimine kaydet.</p>
+          <div class="location-actions">
+            <a class="btn btn-primary" id="googleCalendarBtn" href="https://calendar.google.com/calendar/u/0/r/eventedit?text=Ahmet%20ve%20%C4%B0rem%20Ni%C5%9Fan%20T%C3%B6reni&dates=20260912T190000/20260912T230000&ctz=Europe%2FIstanbul&details=Ni%C5%9Fan%20davetimize%20kat%C4%B1l%C4%B1m%C4%B1n%C4%B1z%20bizi%20mutlu%20edecektir.&location=Lavinya%20Koru%2C%20%C3%9Cmitk%C3%B6y%2C%20%C3%87ankaya%2C%20Ankara" target="_blank" rel="noopener noreferrer">Google Takvim</a>
+            <a class="btn btn-ghost" id="icsDownloadBtn" href="#">iCal (.ics) İndir</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="story reveal" aria-labelledby="story-title">
+      <h2 id="story-title">Kısa Hikayemiz</h2>
+      <p>
+        Bir kahve molasında başlayan sohbet, yıllar içinde sevgiyle büyüdü.
+        Şimdi bu hikayeyi ailemiz ve dostlarımızla beraber kutlamak istiyoruz.
+      </p>
+      <blockquote class="story-quote">"İki kalp, tek niyet, bolca dua."</blockquote>
+    </section>
+
+    <section id="contact" class="contact reveal" aria-labelledby="contact-title">
+      <h2 id="contact-title">İletişim</h2>
+      <!-- Yayin oncesi: isim ve telefon numaralarini son haline gore guncelle. -->
+      <div class="contact-grid">
+        <article class="contact-card">
+          <h3>İrem Tarafı</h3>
+          <p class="contact-name">Mustafa Bey</p>
+          <p class="contact-phone">+90 555 111 22 33</p>
+          <div class="contact-actions">
+            <a class="btn btn-secondary" href="tel:+905551112233">Ara</a>
+            <a class="btn btn-ghost" href="https://wa.me/905551112233" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+          </div>
+        </article>
+
+        <article class="contact-card">
+          <h3>Ahmet Tarafı</h3>
+          <p class="contact-name">Hasan Bey</p>
+          <p class="contact-phone">+90 555 444 55 66</p>
+          <div class="contact-actions">
+            <a class="btn btn-secondary" href="tel:+905554445566">Ara</a>
+            <a class="btn btn-ghost" href="https://wa.me/905554445566" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="reveal">
+    <p>Sevgiyle bekliyoruz.</p>
+    <p>Ahmet & İrem</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
