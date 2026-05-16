@@ -1,7 +1,7 @@
-const targetDate = new Date("2026-09-12T19:00:00").getTime();
+const targetDate = new Date("2026-06-27T16:00:00").getTime();
 // Yayin oncesi: etkinlik tarih/saatini kesin bilgiye gore guncelle.
-const eventStart = new Date("2026-09-12T19:00:00");
-const eventEnd = new Date("2026-09-12T23:00:00");
+const eventStart = new Date("2026-06-27T16:00:00");
+const eventEnd = new Date("2026-06-27T20:00:00");
 
 const inviteIntro = document.getElementById("inviteIntro");
 const openInviteBtn = document.getElementById("openInviteBtn");
@@ -172,7 +172,7 @@ function toCalendarUtc(date) {
 function buildGoogleCalendarUrl() {
   const title = "Ahmet ve İrem Nişan Töreni";
   const details = "Nişan davetimize katılımınız bizi mutlu edecektir.";
-  const location = "Lavinya Koru, Ümitköy, Çankaya, Ankara";
+  const location = "https://maps.app.goo.gl/HXrPC6myu4cwF4WY9";
   const dates = `${toCalendarUtc(eventStart)}/${toCalendarUtc(eventEnd)}`;
 
   const params = new URLSearchParams({
@@ -199,7 +199,7 @@ function buildIcsFile() {
     `DTEND:${toCalendarUtc(eventEnd)}`,
     "SUMMARY:Ahmet ve İrem Nişan Töreni",
     "DESCRIPTION:Nişan davetimize katılımınız bizi mutlu edecektir.",
-    "LOCATION:Lavinya Koru, Ümitköy, Çankaya, Ankara",
+    "LOCATION:https://maps.app.goo.gl/HXrPC6myu4cwF4WY9",
     "END:VEVENT",
     "END:VCALENDAR"
   ];

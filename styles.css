@@ -826,60 +826,20 @@ footer p {
 
 .mini-map {
   margin-top: 14px;
-  min-height: 150px;
+  min-height: 280px;
   border-radius: 14px;
   border: 1px solid #dabc97;
-  background:
-    linear-gradient(90deg, rgba(184, 145, 104, 0.12) 1px, transparent 1px),
-    linear-gradient(0deg, rgba(184, 145, 104, 0.12) 1px, transparent 1px),
-    linear-gradient(140deg, #f7ecdf 0%, #edd9c3 100%);
-  background-size: 24px 24px, 24px 24px, cover;
-  display: grid;
-  place-items: center;
-  text-align: center;
-  padding: 14px;
+  background: #f7ecdf;
   position: relative;
   overflow: hidden;
 }
 
-.mini-map::before {
-  content: "";
-  position: absolute;
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(255, 247, 236, 0.85) 0%, rgba(255, 247, 236, 0) 70%);
-}
-
-.mini-map-pin {
-  width: 18px;
-  height: 18px;
-  border-radius: 50% 50% 50% 0;
-  transform: rotate(-45deg);
-  background: linear-gradient(160deg, #c7755a 0%, #a44734 100%);
-  border: 2px solid #8f3727;
-  position: relative;
-  z-index: 1;
-}
-
-.mini-map-pin::after {
-  content: "";
-  position: absolute;
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background: #fce7d6;
-  top: 4px;
-  left: 4px;
-}
-
-.mini-map-text {
-  margin: 10px 0 0;
-  color: #6d5848;
-  max-width: 280px;
-  font-size: 0.93rem;
-  position: relative;
-  z-index: 1;
+.mini-map-embed {
+  width: 100%;
+  height: 100%;
+  min-height: 280px;
+  border: 0;
+  display: block;
 }
 
 .location-notes {
